@@ -1,0 +1,65 @@
+.skill-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  background-color: white;
+  padding: 4rem;
+  margin: 0 auto;
+}
+
+.skill-container > img {
+  position: absolute;
+  display: hidden;
+  right: 0;
+  bottom: 50%;
+  width: 16%;
+}
+
+.skills-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.skills-wrapper > div {
+  display: flex;
+  flex-direction: column;
+}
+.skill-heading {
+  margin-top: 20px;
+  text-decoration: underline solid #11abb0;
+  text-underline-offset: 0.2em;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: black;
+  offset: 0.25rem;
+}
+.skill-list-header {
+  margin-top: 20px;
+}
+.skill-list-header h3 {
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  color: #767070;
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.other-skills-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+.icon-image {
+  width: 50px;
+  height: 50px;
+  margin: 4px 8px;
+}
+
+@media screen and (max-width: 800px) and (orientation: landscape),
+  screen and (max-height: 300px) {
+  #skill-container > img {
+    max-width: 100%;
+    display: block;
+  }
+}

@@ -1,11 +1,9 @@
-import React from "react";
-
 const About = ({ data }) => {
   if (data) {
     var name = data.name;
-    var profilepic = "images/" + data.image;
+    var profilepic =
+      "https://res.cloudinary.com/dqg4mckho/image/upload/v1692808401/Portfolio/ngy0klk53ofcnrjbcuxz.png";
     var bio = data.bio;
-    var street = data.address.street;
     var city = data.address.city;
     var state = data.address.state;
     var zip = data.address.zip;
@@ -21,7 +19,7 @@ const About = ({ data }) => {
           <img
             className="profile-pic"
             src={profilepic}
-            alt="Sonny's Profile Pic"
+            alt="Sneha's Profile Pic"
           />
         </div>
         <div className="nine columns main-col">
@@ -35,8 +33,6 @@ const About = ({ data }) => {
                 <span>{name}</span>
                 <br />
                 <span>
-                  {street}
-                  <br />
                   {city} {state}, {zip}
                 </span>
                 <br />
@@ -47,9 +43,9 @@ const About = ({ data }) => {
             </div>
             <div className="columns download">
               <p>
-                <a href={resumeDownload} className="button">
+                <b href={resumeDownload} className="button">
                   <i className="fa fa-download"></i>Download Resume
-                </a>
+                </b>
               </p>
             </div>
           </div>

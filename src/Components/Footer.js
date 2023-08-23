@@ -1,17 +1,13 @@
-import React from "react";
-
 const Footer = ({ data }) => {
-  if (data) {
-    var networks = data.social.map(function (network) {
-      return (
-        <li key={network.name}>
-          <a href={network.url}>
-            <i className={network.className}></i>
-          </a>
-        </li>
-      );
-    });
-  }
+  const networks = data.social.map(function (network) {
+    return (
+      <li key={network.name}>
+        <a href={network.url}>
+          <i className={network.className}></i>
+        </a>
+      </li>
+    );
+  });
 
   return (
     <footer>
@@ -22,14 +18,14 @@ const Footer = ({ data }) => {
           <ul className="copyright">
             <li>
               Made by{" "}
-              <a title="PAPA" href="http://www.papareact.com/">
-                PAPA
+              <a title="Sneha Prajapati" href="http://www.snehaprajapati.com/">
+                Sneha Prajapati
               </a>
             </li>
           </ul>
         </div>
         <div id="go-top">
-          <a className="smoothscroll" title="Back to Top" href="#home">
+          <a className="smoothscroll" title="Back to Top" href="/">
             <i className="icon-up-open"></i>
           </a>
         </div>
