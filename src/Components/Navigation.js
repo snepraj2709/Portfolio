@@ -1,32 +1,38 @@
-import { NavLink, useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 function Navigation() {
   const location = useLocation();
+  const navigate = useNavigate();
 
   return (
     <nav id="nav-wrap">
-      <a className="mobile-btn" title="Show navigation" href="/#">
+      <a className="mobile-btn" title="Show navigation" href="/">
         Show navigation
       </a>
-      <a className="mobile-btn" title="Hide navigation" href="/#">
+      <a className="mobile-btn" title="Hide navigation" href="/">
         Hide navigation
       </a>
 
       <ul id="nav" className="nav">
         <li className={location.pathname === "/" ? "current" : null}>
-          <NavLink exact to="/" className="smoothscroll">
+          <a href="/" className="smoothscroll" onClick={() => navigate("/")}>
             Home
-          </NavLink>
+          </a>
         </li>
         <li className={location.pathname === "/about" ? "current" : null}>
-          <NavLink to="/about" className="smoothscroll">
+          <a
+            href="/about"
+            className="smoothscroll"
+            onClick={() => navigate("/about")}>
             About
-          </NavLink>
+          </a>
         </li>
-        <li className={location.pathname === "/work" ? "current" : null}>
-          <NavLink to="/work" className="smoothscroll">
+        <li
+          className={location.pathname === "/work" ? "current" : null}
+          onClick={() => navigate("/work")}>
+          <a href="/work" className="smoothscroll">
             Work
-          </NavLink>
+          </a>
         </li>
       </ul>
     </nav>
