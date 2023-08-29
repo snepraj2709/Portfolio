@@ -29,7 +29,7 @@ const Portfolio = ({ data }) => {
   });
 
   return (
-    <section id="about">
+    <section id="work">
       <div className="portfolio-container">
         <span>My Projects</span>
         <div className="projects-container">{projects}</div>
