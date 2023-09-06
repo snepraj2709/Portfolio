@@ -4,7 +4,7 @@ export const userData = {
     occupation: "A React Developer with an entrepreneurial mind",
     description: "I love to Learn, Build and Tinker with latest technologies",
     image: "profilepic.jpg",
-    bio: "Hi there! I am Sneha! A pragmatic React Developer who loves to build useful & interactive web apps. I am a creative combo of A Software Engineer,A Marketer, and An Entrepreneur.",
+    bio: "Hi there! I am Sneha! A pragmatic React Developer who loves to build useful & interactive web apps. I am a creative combo of A engineering and a Business.",
     contactmessage: "Drop me a mail or connect via linkedIn",
     email: "snehaprajapatijnv15@gmail.com",
     phone: "6394920430",
